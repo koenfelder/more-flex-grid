@@ -1,6 +1,5 @@
 /*
-    Name: 
-*/
+    Name: Koen Felder */
 
 :root{
     /* Color Theme from Adobe Color */
@@ -137,6 +136,7 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
 }
 
 nav a{
@@ -165,6 +165,7 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+
 }
 
 nav a:focus{
@@ -224,16 +225,23 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px 32px;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1/-1;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
     margin: 32px auto 0;
 }
 
@@ -244,6 +252,7 @@ p{
 #plants img{
     /* Styles were added here to arrange the content, I used a property for a flexbox child to change the order that the content appears on the page */
     /* TO DO */
+    order: -1;
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -265,6 +274,9 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
 }
 
 /* Contact Heading and Paragraph */
